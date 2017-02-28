@@ -15,7 +15,7 @@ gulp.task('pug', function () {
 })
 
 gulp.task('styles', function () {
-  return gulp.src('./dev/scss/*.scss')
+  return gulp.src('./dev/scss/styles.scss')
     .pipe(plum())
     .pipe(sass({outputStyle: 'nested'}))
     .pipe(pref({browsers: 'last 5 versions', cascade: true}))

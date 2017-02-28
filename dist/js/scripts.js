@@ -4,7 +4,7 @@
 
 // console.log('Los 6 primeros caracteres de la palabra ' + palabra + ' son: ' + palabra.substring(0, 6))
 
-var num = 125478965299
+var num = 12547
 var i = 3
 var j = 0
 
