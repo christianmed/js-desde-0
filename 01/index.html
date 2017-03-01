@@ -11,6 +11,125 @@
       <h1 class="header__title"> Curso JS-Desde-0 | Clase 01</h1>
     </header>
     <div class="container">
+      <section>
+        <h2 class="subtitle">Insertar JS dentro de HTML</h2>
+        <p>Se usa la etiqueta script y se puede escribir código JS dentro de ella o dejarla vacía y llamar a un archivo .js usando el atributo src.</p>
+      </section>
+      <section>
+        <h2 class="subtitle">Sintaxis de JS.</h2>
+        <ul>
+          <li>Case Sensitive (sensible a las mayúsculas y minúsculas)</li>
+          <li>Es de tipado dinámico</li>
+          <li>Los comentarios en JS de pueden escribir de dos maneras:
+            <ul>
+              <li><code>/* */ (multilínea)</code></li>
+              <li><code>// (una sola línea - recomendada)</code></li>
+            </ul>
+          </li>
+          <li>Todas las sentencias deben terminar con punto y coma</li>
+          <li>Por regla general, después de llaves no debe ir punto y coma, salvo dos excepciones:
+            <ul>
+              <li>Cuando se crea un obejto literal</li>
+              <li>Cuando se crea una funcion con expresiones</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="subtitle">Instalar SublimeLinter JsHint (ST3)</h2>
+        <ul>
+          <li>Buscar e instalar SublimeLinter desde el package control</li>
+          <li>Instalar SublimeLinter-jshint</li>
+          <li>Instalar NodeJS desde su página web <a href="http://nodejs.org"> (http://nodejs.org)</a></li>
+          <li>Instalar jshint desde npm con el siguiente comando en terminal: <code>npm install -g jshint</code></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="subtitle">Variables</h2>
+        <p>Son contenedores de información.</p>
+        <p>Se crean con la palabra reservada "var" seguida del nombre la variable y con el signo = se le asigna un valor.</p>
+        <p>Se podría también crear una variable y no asignarle ningún valor. En este caso al variable devuelve <code>undefined</code>.</p>
+        <p>Las variables tienes un scope (ámbito) en el cual existen. Fuera de ese ámbito no existen.</p>
+        <p>Toda variable que se declara dentro de una función, tiene a esa función com su scope.</p>
+        <p>Toda variable declarada desde fuera de cualquier función se llama variable global (no es buena práctica usarlas). Además crea una variable sin "var" la vuelve automáticamente global, lo cual no es bueno.</p>
+      </section>
+      <section>
+        <h2 class="subtitle">Tipos de Datos</h2>
+        <ul>
+          <li>Primitivos (un solo valor)
+            <ul>
+              <li>Primarios
+                <ul>
+                  <li>Number</li>
+                  <li>String <br> son cero o más caracteres encerrados entre comillas (dobles o simples). Es caracter de escape es el backslash (\).</li>
+                  <li>Boolean <br> Sólo tienen dos valores posibles: true (verdadero) y false (falso). Existen valores que se comportan como false (falsy values) y otros que se comportan como true (truthy values).
+                    <ul>
+                      <li>Falsy Values:
+                        <ul>
+                          <li>NaN</li>
+                          <li>0</li>
+                          <li>""</li>
+                          <li>Null</li>
+                          <li>undefined</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Especiales
+                <ul>
+                  <li>undefined</li>
+                  <li>Null</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Compuestos (más de un valor)
+            <ul>
+              <li>Arrays</li>
+              <li>Objetos</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="subtitle">Operadores</h2>
+        <p>Signos que se utilizan para realizar operaciones.</p>
+        <ul>
+          <li>Operadores de asignación
+            <ul>
+              <li><code>=</code></li>
+              <li><code>+</code></li>
+              <li><code>-</code></li>
+            </ul>
+          </li>
+          <li>Operadores de comparación
+            <ul>
+              <li><code>==</code> Igualdad de valor</li>
+              <li><code>===</code> Igualdad de valor y tipo de dato (reomendada)</li>
+              <li><code>!=</code> No igualdad de valor</li>
+              <li><code>!==</code> No igualdad de valor y tipo</li>
+              <li><code><</code> Menor que</li>
+              <li><code>></code> Mayor que</li>
+              <li><code><=</code> Menor o igual que</li>
+              <li><code>>=</code> Mayor o igual que</li>
+            </ul>
+          </li>
+          <li>Operadores Aritméticos
+            <ul>
+              <li><code>+</code> Suma</li>
+              <li><code>-</code> Resta</li>
+              <li><code>*</code> Multiplicación</li>
+              <li><code>/</code> División</li>
+              <li><code>%</code> Módulo</li>
+              <li><code>++</code> Incremento</li>
+              <li><code>--</code> Decremento</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <script src="scripts.js"></script>
     </div>
   </body>
 </html>

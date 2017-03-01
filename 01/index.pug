@@ -4,4 +4,92 @@ block vars
   -var title = "01"
 
 block content
+  section
+    h2.subtitle Insertar JS dentro de HTML
+    p Se usa la etiqueta script y se puede escribir código JS dentro de ella o dejarla vacía y llamar a un archivo .js usando el atributo src.
   
+  section
+    h2.subtitle Sintaxis de JS.
+    ul
+      li Case Sensitive (sensible a las mayúsculas y minúsculas)
+      li Es de tipado dinámico
+      li Los comentarios en JS de pueden escribir de dos maneras:
+        ul
+          li <code>/* */ (multilínea)</code>
+          li <code>// (una sola línea - recomendada)</code>
+      li Todas las sentencias deben terminar con punto y coma
+      li Por regla general, después de llaves no debe ir punto y coma, salvo dos excepciones:
+        ul
+          li Cuando se crea un obejto literal
+          li Cuando se crea una funcion con expresiones
+  
+  section
+    h2.subtitle Instalar SublimeLinter JsHint (ST3)
+    ul
+      li Buscar e instalar SublimeLinter desde el package control
+      li Instalar SublimeLinter-jshint
+      li Instalar NodeJS desde su página web <a href="http://nodejs.org"> (http://nodejs.org)</a>
+      li Instalar jshint desde npm con el siguiente comando en terminal: <code>npm install -g jshint</code>
+  section
+    h2.subtitle Variables
+    p Son contenedores de información.
+    p Se crean con la palabra reservada "var" seguida del nombre la variable y con el signo = se le asigna un valor.
+    p Se podría también crear una variable y no asignarle ningún valor. En este caso al variable devuelve <code>undefined</code>.
+    p Las variables tienes un scope (ámbito) en el cual existen. Fuera de ese ámbito no existen.
+    p Toda variable que se declara dentro de una función, tiene a esa función com su scope.
+    p Toda variable declarada desde fuera de cualquier función se llama variable global (no es buena práctica usarlas). Además crea una variable sin "var" la vuelve automáticamente global, lo cual no es bueno.
+  section
+    h2.subtitle Tipos de Datos
+    ul
+      li Primitivos (un solo valor)
+        ul
+          li Primarios
+            ul
+              li Number
+              li String <br> son cero o más caracteres encerrados entre comillas (dobles o simples). Es caracter de escape es el backslash (\).
+              li Boolean <br> Sólo tienen dos valores posibles: true (verdadero) y false (falso). Existen valores que se comportan como false (falsy values) y otros que se comportan como true (truthy values).
+                ul
+                  li Falsy Values:
+                    ul
+                      li NaN
+                      li 0
+                      li ""
+                      li Null
+                      li undefined
+          li Especiales
+            ul
+              li undefined
+              li Null
+      li Compuestos (más de un valor)
+        ul
+          li Arrays
+          li Objetos
+  section
+    h2.subtitle Operadores
+    p Signos que se utilizan para realizar operaciones.
+    ul
+      li Operadores de asignación
+        ul
+          li <code>=</code>
+          li <code>+</code>
+          li <code>-</code>
+      li Operadores de comparación
+        ul
+          li <code>==</code> Igualdad de valor
+          li <code>===</code> Igualdad de valor y tipo de dato (reomendada)
+          li <code>!=</code> No igualdad de valor
+          li <code>!==</code> No igualdad de valor y tipo
+          li <code><</code> Menor que
+          li <code>></code> Mayor que
+          li <code><=</code> Menor o igual que
+          li <code>>=</code> Mayor o igual que
+      li Operadores Aritméticos
+        ul
+          li <code>+</code> Suma
+          li <code>-</code> Resta
+          li <code>*</code> Multiplicación
+          li <code>/</code> División
+          li <code>%</code> Módulo
+          li <code>++</code> Incremento
+          li <code>--</code> Decremento
+  script(src="scripts.js")

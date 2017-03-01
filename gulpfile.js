@@ -21,4 +21,5 @@ gulp.task('default', ['pug'], function () {
   gulp.watch(src + '*.pug', ['pug']);
   gulp.watch(src + '*.html').on('change', reload);
   gulp.watch(src + '*.css').on('change', reload);
+  gulp.watch(src + '*.js').on('change', reload);
 })

@@ -4,7 +4,7 @@
   #292D3E;
 */
 
-* {
+*:not(ul) {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -52,4 +52,15 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 1.5em;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+code {
+  line-height: 1.8em;
+  padding: .2em;
+  background: #E9D59F;
+  border-radius: 5px;
 }
