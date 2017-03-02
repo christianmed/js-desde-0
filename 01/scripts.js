@@ -1,17 +1,17 @@
 // alert("Estoy programanado");
 
-function saludar() {
-  alert("Buenos días");
+function saludar () {
+  alert('Buenos días')
 }
 
 var miObjeto = {
-  nombre: "telefono"
-};
+  nombre: 'telefono'
+}
 
-var despedirse = function() {
-  console.loge("Adiós");
-};
+var despedirse = function () {
+  console.loge('Adiós')
+}
 
-var nombre = "Christian";
+var nombre = 'Christian'
 
-var noDefinida;
+var noDefinida
