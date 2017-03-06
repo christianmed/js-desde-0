@@ -16,7 +16,7 @@ var miMascota = {
 var cadena = 'Soy una cadena de texto' // literal
 var numero = 10 // Literal
 var cadena2 = new String('Soy otra cadena de texto') // Definido por constructor
-var numero2 = new Number(20) // Definido por constructor
+var numero2 = new Number(20); // Definido por constructor
 
 /**
  * Recuperar (get) o definir (set) información de un objeto
@@ -46,7 +46,7 @@ var numero2 = new Number(20) // Definido por constructor
   'use strict'
   var name = 'Juan'
   console.log('Hola ' + name)
-})()
+})();
 
 /**
  * THIS
@@ -61,7 +61,7 @@ var numero2 = new Number(20) // Definido por constructor
  */
 
 (function test () {
-  'use strict'
+  // 'use strict'
   console.log(this)
 })()
 
@@ -77,10 +77,24 @@ var persona = {
   saludar: function () {
     return 'Hola, me llamo ' + this.nombre + ' y tengo ' + this.edad + ' años.'
   }
-}
+};
 
 /**
  * CASO 3 --> this dentro de event handler
  *
  * En este caso this hace referencia al elemento HTML que disparó el evento.
  */
+
+(function obtenerFecha () {
+  var diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+
+  var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+
+  var fecha = new Date()
+  var diaSem = diasSemana[fecha.getDay()]
+  var diaMes = fecha.getDate()
+  var mes = meses[fecha.getMonth()]
+  var ano = fecha.getFullYear()
+
+  console.log(diaSem, diaMes, mes, ano)
+})()
