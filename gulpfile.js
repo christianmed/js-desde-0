@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   plum = require('gulp-plumber'),
   brow = require('browser-sync').create(),
   reload = brow.reload,
-  src = './03/'
+  src = './04/'
 
 gulp.task('pug', function () {
   return gulp.src(src + '*.pug')
