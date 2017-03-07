@@ -3,21 +3,23 @@ var gulp = require('gulp'),
   plum = require('gulp-plumber'),
   brow = require('browser-sync').create(),
   reload = brow.reload,
-  src = './04/'
+  src = './05/';
 
 gulp.task('pug', function () {
+  'use strict';
   return gulp.src(src + '*.pug')
-  .pipe(plum())
-  .pipe(pug({pretty: true}))
-  .pipe(plum.stop())
-  .pipe(gulp.dest(src))
-})
+    .pipe(plum())
+    .pipe(pug({ pretty: true }))
+    .pipe(plum.stop())
+    .pipe(gulp.dest(src));
+});
 
 gulp.task('default', ['pug'], function () {
-  brow.init({server: src})
+  'use strict';
+  brow.init({ server: src });
 
-  gulp.watch(src + '*.pug', ['pug'])
-  gulp.watch(src + '*.html').on('change', reload)
-  gulp.watch(src + '*.css').on('change', reload)
-  gulp.watch(src + '*.js').on('change', reload)
-})
+  gulp.watch(src + '*.pug', ['pug']);
+  gulp.watch(src + '*.html').on('change', reload);
+  gulp.watch(src + '*.css').on('change', reload);
+  gulp.watch(src + '*.js').on('change', reload);
+});

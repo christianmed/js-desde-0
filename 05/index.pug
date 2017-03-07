@@ -1,0 +1,16 @@
+extends ../pug/base.pug
+
+block vars 
+  -var title = 05
+
+block content
+  section
+    h2.subtitle Eventos
+    h2.subtitle Haz click en el siguiente párrafo
+    p#parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, dolorum! Rem nemo tenetur dolorem ducimus distinctio quas, doloremque suscipit voluptatibus.
+    h2.subtitle Crear botón para mostrar la Fecha
+    a(href="#")#date.btn Fecha
+    h2.subtitle Crear botón para mostrar la Hora
+    a(href="#")#hour.btn Hora
+
+  script(src="scripts.js")

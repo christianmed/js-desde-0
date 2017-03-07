@@ -6,17 +6,19 @@ var miMascota = {
   color: 'Negro',
   edad: 2,
   ladrar: function () {
-    return 'Guau, Guau'
+    'use strict';
+    return 'Guau, Guau';
   },
   llamar: function () {
-    return this.nombre + ', ven acá'
+    'use strict';
+    return this.nombre + ', ven acá';
   }
-}
+};
 
-var cadena = 'Soy una cadena de texto' // literal
-var numero = 10 // Literal
-var cadena2 = new String('Soy otra cadena de texto') // Definido por constructor
-var numero2 = new Number(20); // Definido por constructor
+var cadena = 'Soy una cadena de texto'; // literal
+var numero = 10; // Literal
+// var cadena2 = new String('Soy otra cadena de texto'); // Definido por constructor
+// var numero2 = new Number(20); // Definido por constructor
 
 /**
  * Recuperar (get) o definir (set) información de un objeto
@@ -42,10 +44,10 @@ var numero2 = new Number(20); // Definido por constructor
  * Se activa añadiendo el string "use strict" en la primera línea del scope (se recomienda que sea adentro de una función)
  */
 
-(function saludar () {
-  'use strict'
-  var name = 'Juan'
-  console.log('Hola ' + name)
+(function saludar() {
+  'use strict';
+  var name = 'Juan';
+  console.log('Hola ' + name);
 })();
 
 /**
@@ -60,10 +62,10 @@ var numero2 = new Number(20); // Definido por constructor
  * Si no se usa strict, devulve el objeto global (window). Si se usa struct devuelve undefined.
  */
 
-(function test () {
-  // 'use strict'
-  console.log(this)
-})()
+(function test() {
+  'use strict';
+  console.log(this);
+})();
 
 /**
  * CASO 2 --> this dentro de un método
@@ -75,7 +77,8 @@ var persona = {
   nombre: 'Carmen',
   edad: 25,
   saludar: function () {
-    return 'Hola, me llamo ' + this.nombre + ' y tengo ' + this.edad + ' años.'
+    'use strict';
+    return 'Hola, me llamo ' + this.nombre + ' y tengo ' + this.edad + ' años.';
   }
 };
 
@@ -85,16 +88,17 @@ var persona = {
  * En este caso this hace referencia al elemento HTML que disparó el evento.
  */
 
-(function obtenerFecha () {
-  var diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+(function obtenerFecha() {
+  'use strict';
+  var diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
-  var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+  var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
-  var fecha = new Date()
-  var diaSem = diasSemana[fecha.getDay()]
-  var diaMes = fecha.getDate()
-  var mes = meses[fecha.getMonth()]
-  var ano = fecha.getFullYear()
+  var fecha = new Date();
+  var diaSem = diasSemana[fecha.getDay()];
+  var diaMes = fecha.getDate();
+  var mes = meses[fecha.getMonth()];
+  var ano = fecha.getFullYear();
 
-  console.log(diaSem, diaMes, mes, ano)
-})()
+  console.log(diaSem, diaMes, mes, ano);
+})();
