@@ -96,3 +96,18 @@ code {
   background: rebeccapurple;
   box-shadow: 0 0 3px 3px rebeccapurple;
 }
+
+input {
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 1rem;
+  line-height: 3rem;
+  border: none;
+  padding-left: 1rem;
+}
+
+input:focus {
+  outline: none;
+  background: #eee;
+}
