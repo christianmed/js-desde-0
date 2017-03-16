@@ -87,3 +87,12 @@ code {
   box-shadow: inset 0px -2em 0px rgb(41,45,62);
   color: #E9D59F;
 }
+
+.punto {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rebeccapurple;
+  box-shadow: 0 0 3px 3px rebeccapurple;
+}
